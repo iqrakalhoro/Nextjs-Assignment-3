@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUser, FaPhone, FaEnvelope,FaBookOpen, FaHospital, FaMap, FaPalette, FaLaptop, FaMailBulk } from 'react-icons/fa';
+import { FaPhone,FaBookOpen, FaHospital, FaMap, FaPalette, FaLaptop, FaMailBulk } from 'react-icons/fa';
 import { FaPerson } from 'react-icons/fa6';
 import Image from 'next/image';
 import img from "../about/image.jpg"

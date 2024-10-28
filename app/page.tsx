@@ -2,8 +2,12 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer/Footer';
 import Image from 'next/image';
-import img from "./about/image.jpg"
+import img from './about/image.jpg';
 import Link from 'next/link';
+import About from './about/page';
+import Skills from './skills/page';
+import PortfolioSection from './portfolio/page';
+import ContactForm from './contact/page';
 
 export default function HomePage() {
   return (
@@ -25,7 +29,7 @@ export default function HomePage() {
             </p>
             <div className="btn-container flex space-x-20 justify-center">
               <button className="border border-blue-400 text-black bg-blue-400 px-6 py-3 rounded-lg transition duration-500 hover:bg-transparent hover:text-blue-400">
-              <Link href="/services">Services</Link> 
+              <Link href="/portfolio">My Portfolio</Link> 
               </button>
               <button className="border border-blue-400 text-blue-400 px-6 py-3 rounded-lg transition duration-500 hover:bg-blue-400 hover:text-black">
                 <Link href="/contact">Contact me</Link>
@@ -41,8 +45,14 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      {/* About Me Section */}
-      <section ></section>
+      {/* ABout me section */}
+      <About/>
+      {/* Skills Section */}
+      <Skills/>
+      {/* Portfolio Section */}
+      <PortfolioSection/>
+      {/* Contact me Section */}
+      <ContactForm/>
 
       {/* Footer */}
       <Footer />
