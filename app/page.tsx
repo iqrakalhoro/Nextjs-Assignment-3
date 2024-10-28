@@ -40,7 +40,7 @@ export default function HomePage() {
 
         {/* Right Container */}
         <div className="right-container h-screen flex items-center justify-center w-[50%] " >
-          <div className='shadow-box flex justify-center items-center w-[60%] border-2 border-blue-500  h-[60%] rounded-[50%]' >
+          <div className="shadow-box flex justify-center items-center w-[60%] border-2 border-blue-500  h-[60%] rounded-[50%]" >
             <Image src={img} alt='' className='w-[370px] h-[370px] rounded-[50%]'></Image>
           </div>
         </div>
