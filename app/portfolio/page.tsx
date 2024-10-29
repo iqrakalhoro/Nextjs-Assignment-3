@@ -1,8 +1,8 @@
 const PortfolioSection = () => {
   const images = [
     '/Final-Logo.jpg',
-    '/NCA-Logo-practice.jpg',
-    '/NEON-LOGO.jpg',
+    '/NCA-logo-practice.jpg',
+    '/NEON-lOGO.jpg',
     '/task-4.jpg',
     '/Professional-Business-card.jpg',
     '/Task-4-Business-card.jpg',
