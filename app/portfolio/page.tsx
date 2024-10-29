@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const PortfolioSection = () => {
   const images = [
     '/Final-Logo.jpg',
@@ -21,13 +19,13 @@ const PortfolioSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {images.map((imageSrc, index) => (
               <div key={index} className="portfolio-card bg-gray-100 p-4 rounded-md shadow-md">
-                <Image
+                <img
                   src={imageSrc}
                   alt={`Project ${index + 1}`}
-                  width={500} 
-                  height={192}
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
+                
+            
               </div>
             ))}
           </div>
