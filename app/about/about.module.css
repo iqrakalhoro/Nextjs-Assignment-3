@@ -1,0 +1,144 @@
+/* about.module.css */
+
+.about-section {
+    background-color: #ffffff;
+    padding: 6rem 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .row-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+  }
+  
+  .image-container img {
+    width: 22.8rem;
+    height: 75vh;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .content {
+    color: #333;
+    max-width: 600px;
+  }
+  
+  .content h3 {
+    font-size: 1.25rem;
+    color: #3b82f6; /* blue-500 */
+  }
+  
+  .content h1 {
+    font-size: 2.6rem;
+    font-family: 'Fantasy';
+    color: #60a5fa; /* blue-400 */
+    margin-top: 0.5rem;
+  }
+  
+  .content p {
+    color: #ffffff;
+    font-size: 1rem;
+    max-width: 80%;
+    margin: 1rem 0 2rem;
+  }
+  
+  .information {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.75rem;
+  }
+  
+  .detail .inline-block {
+    margin-right: 0.5rem;
+  }
+  
+  .text-blue {
+    color: #3b82f6; 
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+    color: #93c5fd;
+    margin-top: 1.5rem;
+  }
+  
+  .interest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.25rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .interest li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .fill-blue {
+    color: #60a5fa;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .row-container {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      max-width: 18rem;
+      border-radius: 50%;
+    }
+  
+    .content h1 {
+      font-size: 2rem;
+    }
+  
+    .content p {
+      max-width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .interest {
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .detail {
+      font-size: 0.9rem;
+    }
+  
+    .interest li {
+      font-size: 0.85rem;
+    }
+  }
+  

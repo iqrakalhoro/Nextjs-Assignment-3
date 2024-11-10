@@ -1,0 +1,60 @@
+/* footer.module.css */
+
+/* General Footer Styling */
+.footer {
+    background-color: #262525;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footerContent p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  .footerMenu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+  }
+  
+  .footerItem {
+    margin: 0;
+  }
+  
+  .footerLink {
+    color: #5db9ee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footerLink:hover {
+    color: #a3daff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: none;
+      gap: 0.5rem;
+    }
+  
+    .footerMenu {
+      flex-direction: none;
+      gap: 0.5rem;
+    }
+  }
+  

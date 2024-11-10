@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import styles from './service.module.css';
 
 const services = [
   {
@@ -35,18 +36,18 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services-section" className="section bg-[#262525]">
-      <div className="container mx-auto p-4">
-        <div className="flex flex-col items-center">
-          <div className="text-center mb-8">
-            <h3 className="text-lg font-semibold text-blue-500">Services</h3>
-            <h1 className="text-3xl font-bold text-blue-400">What I Offer</h1>
+    <section id="services-section" className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles['flex-center']}>
+          <div className={styles['text-center']}>
+            <h3 className={styles.heading}>Services</h3>
+            <h1 className={styles.subheading}>What I Offer</h1>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className={styles.grid}>
             {services.map((service, index) => (
-              <div key={index} className="card bg-gray-100 p-6 rounded-md shadow-md">
-                <h4 className="text-xl font-bold mb-2 text-blue-600">{service.title}</h4>
-                <p className="para text-gray-700">{service.description}</p>
+              <div key={index} className={styles.card}>
+                <h4 className={styles['card-title']}>{service.title}</h4>
+                <p className={styles.para}>{service.description}</p>
               </div>
             ))}
           </div>
@@ -56,12 +57,4 @@ const ServicesSection = () => {
   );
 };
 
-const App = () => {
-  return (
-    <div>
-      <ServicesSection />
-    </div>
-  );
-};
-
-export default App;
+export default ServicesSection;

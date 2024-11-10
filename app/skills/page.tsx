@@ -1,39 +1,37 @@
 import React from 'react';
 
 const skills = [
-  { name: 'HTML', percentage: 55, barClass: 'bg-blue-500' },
-  { name: 'Graphic Design', percentage: 80, barClass: 'bg-green-500' },
-  { name: 'CSS', percentage: 60, barClass: 'bg-blue-500' },
-  { name: 'Typescript', percentage: 80, barClass: 'bg-purple-500' },
-  { name: 'Javascript', percentage: 65, barClass: 'bg-yellow-500' },
-  { name: 'WordPress', percentage: 70, barClass: 'bg-indigo-500' },
+  { name: 'HTML', percentage: 55, barClass: 'blue-bar' },
+  { name: 'Graphic Design', percentage: 80, barClass: 'green-bar' },
+  { name: 'CSS', percentage: 60, barClass: 'blue-bar' },
+  { name: 'Typescript', percentage: 80, barClass: 'purple-bar' },
+  { name: 'Javascript', percentage: 65, barClass: 'yellow-bar' },
+  { name: 'WordPress', percentage: 70, barClass: 'indigo-bar' },
 ];
 
 const SkillsSection = () => {
   return (
-    <section className="section bg-white py-12">
-      <div className="container mx-auto p-4">
-        <div className="flex flex-col items-center">
-          <div className="text-center mb-8">
-            <h3 className="text-lg font-semibold text-blue-400">Why Choose Me</h3>
-            <h1 className="text-3xl font-bold text-blue-500">My Skills</h1>
-          </div>
-          <div className="w-full max-w-2xl">
-            {skills.map((skill, index) => (
-              <div key={index} className="mb-6">
-                <div className="flex justify-between text-sm mb-1">
-                  <small>{skill.name}</small>
-                  <small>{skill.percentage}%</small>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-4">
-                  <div
-                    className={`${skill.barClass} h-4 rounded-full`}
-                    style={{ width: `${skill.percentage}%` }}
-                  ></div>
-                </div>
+    <section className="skills-section">
+      <div className="skills-container">
+        <div className="skills-header">
+          <h3 className="skills-subtitle">Why Choose Me</h3>
+          <h1 className="skills-title">My Skills</h1>
+        </div>
+        <div className="skills-list">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill">
+              <div className="skill-info">
+                <small>{skill.name}</small>
+                <small>{skill.percentage}%</small>
               </div>
-            ))}
-          </div>
+              <div className="skill-bar-bg">
+                <div
+                  className={`skill-bar ${skill.barClass}`}
+                  style={{ width: `${skill.percentage}%` }}
+                ></div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
